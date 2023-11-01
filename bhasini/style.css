@@ -1,52 +1,73 @@
+
 body {
+    background-color: #141414;
+    color: #FFFFFF;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f7f7f7;
+    margin: 0;
 }
 
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #333;
-    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-input, .label-output {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
 }
 
 label {
-    display: block;
-    font-weight: bold;
+    font-size: 16px;
     margin-bottom: 10px;
-    color: #555;
 }
 
-select,
-input {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
+select, input {
+    color: #FFFFFF;
+    background-color: #333;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
     border-radius: 5px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+select {
+    font-size: 16px;
+    text-align-last: center;
+}
+
+option {
     font-size: 16px;
 }
 
-#outputText {
-    width: 100%;
-}
-
-#translateButton {
-    width: 100%;
-    padding: 12px;
-    background-color: #4CAF50;
-    color: #fff;
+button {
+    color: #FFFFFF;
+    background-color: #E50914;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
     font-size: 18px;
+    margin-top: 20px;
 }
 
-#translateButton:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #B2070E;
+}
+
+button:active {
+    background-color: #92060A;
 }
