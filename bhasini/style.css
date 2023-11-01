@@ -1,72 +1,88 @@
 body {
+    font-family: Arial, sans-serif;
     background-color: #141414;
-    color: #FFFFFF;
-    font-family: 'Arial', sans-serif;
+    color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
 }
 
 h2 {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 80%;
+    margin-top: 30px;
 }
 
-.label-input, .label-output {
-    display: flex;
-    flex-direction: column;
-    margin: 0 20px;
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+.left {
+    border-right: 2px solid #ffffff;
+    box-sizing: border-box;
 }
 
 label {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
-select, input {
-    color: #FFFFFF;
-    background-color: #333;
-    border: 1px solid #FFFFFF;
-    padding: 10px;
-    border-radius: 5px;
-    width: 200px;
-    margin-bottom: 20px;
+select, input[type="text"] {
+    width: 40%;
+    padding: 22px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    font-size: 22px;
+}
+#inputText {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
 }
 
-select {
-    font-size: 16px;
-    text-align-last: center;
-}
-
-option {
-    font-size: 16px;
+#outputText {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
 }
 
 button {
-    color: #FFFFFF;
-    background-color: #E50914;
-    padding: 15px 30px;
-    border: none;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 23px;
+    font-weight: bold;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
 }
 
 button:hover {
-    background-color: #B2070E;
+    background-color: #b2070f;
 }
 
 button:active {
-    background-color: #92060A;
+    background-color: #8a050c;
+}
+
+select {
+    background: #000;
+    color: #fff;
+    border: 1px solid #ffffff;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #000 0%, #333 100%);
 }
